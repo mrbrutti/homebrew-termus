@@ -1,26 +1,26 @@
 class Termus < Formula
   desc "Terminal music player that generates ambient, jazz, lofi, classical, and more in real time"
   homepage "https://mrbrutti.github.io/termus/"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/mrbrutti/termus/releases/download/v0.2.0/termus_0.2.0_darwin-arm64.tar.gz"
-      sha256 "58e34983efcd5017590a8895097033b9d0fd2eafed96296a1ff1329ef26a46ff"
+      url "https://github.com/mrbrutti/termus/releases/download/v0.3.0/termus_0.3.0_darwin-arm64.tar.gz"
+      sha256 "49cf699457c8ec1813b28e3ed5ea0239d840fec9f7e5761b976d5c6f1d0009bf"
     end
     on_intel do
       # No prebuilt binary for Intel Macs yet — fall back to source build.
-      url "https://github.com/mrbrutti/termus/archive/refs/tags/v0.2.0.tar.gz"
-      sha256 "6203942d21a83fe55898b56349bef6ba6f985a4c36e4d05432aeb363b133d29b"
+      url "https://github.com/mrbrutti/termus/archive/refs/tags/v0.3.0.tar.gz"
+      sha256 "a71b55ce15c171d547ae8ca00b63f92bdf2424d1d654854e8b8068f98db05802"
       depends_on "go" => :build
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/mrbrutti/termus/releases/download/v0.2.0/termus_0.2.0_linux-amd64.tar.gz"
-      sha256 "908bf62e0342fb233fd7eb5a3660fcbf9a2c689ef0143a49847d0cfdb9140807"
+      url "https://github.com/mrbrutti/termus/releases/download/v0.3.0/termus_0.3.0_linux-amd64.tar.gz"
+      sha256 "8a197fabc39631eeeb1a725027d58a42befc71930be4cd319a8546903c3ca9d6"
     end
   end
 
